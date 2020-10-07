@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background_layout"
+    android:background="@drawable/back_layout_2"
     tools:context=".AS_Login">
 
     <TextView
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Commercial Bank"
         android:textColor="@android:color/background_light"
-        android:textSize="26sp"
+        android:textSize="24sp"
+        android:layout_marginTop="8px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
