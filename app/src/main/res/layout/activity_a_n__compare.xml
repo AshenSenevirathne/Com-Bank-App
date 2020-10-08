@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_layout_5"
+    tools:context=".AN_Compare">
+
+    <Button
+        android:id="@+id/fixedBtn8"
+        android:layout_width="298dp"
+        android:layout_height="58dp"
+        android:background="@drawable/button_style"
+        android:text="Compare Account Details"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixedBtn7" />
+
+    <Button
+        android:id="@+id/fixedBtn7"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:background="@drawable/button_style"
+        android:text="Monthly Interest Rate"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/fixedBtn8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email2" />
+
+    <Button
+        android:id="@+id/fixedBtn"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_style"
+        android:text="Compare Account Details"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.035" />
+
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:background="@drawable/text_box_style"
+        android:ems="10"
+        android:hint="Duration"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/fixedBtn7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/account_number"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:background="@drawable/text_box_style"
+        android:ems="10"
+        android:hint="Deposit Amount"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixedBtn" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:background="@drawable/text_box_style"
+        android:ems="10"
+        android:hint="Account Type"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/email2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_number" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/com_bank_logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:text="Commercial Bank"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
