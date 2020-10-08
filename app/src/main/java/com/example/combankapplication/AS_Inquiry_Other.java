@@ -12,17 +12,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AS_Inquiry extends AppCompatActivity {
+public class AS_Inquiry_Other extends AppCompatActivity {
 
     private TextView txtClose;
     private ImageView contact;
     private Dialog contactDetailsPopUp;
-    private Button other;
-
+    private Button cardLost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_s__inquiry);
+        setContentView(R.layout.activity_a_s__inquiry__other);
 
         contact = findViewById(R.id.imageView);
         contactDetailsPopUp = new Dialog(this);
@@ -43,11 +42,11 @@ public class AS_Inquiry extends AppCompatActivity {
             }
         });
 
-        other = findViewById(R.id.button5);
-        other.setOnClickListener(new View.OnClickListener() {
+        cardLost = findViewById(R.id.button2);
+        cardLost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AS_Inquiry.this, AS_Inquiry_Other.class));
+                startActivity(new Intent(AS_Inquiry_Other.this, AS_Inquiry.class));
             }
         });
     }

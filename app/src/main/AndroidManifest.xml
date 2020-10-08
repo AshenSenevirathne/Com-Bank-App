@@ -23,6 +23,7 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".AS_Inquiry_Other"></activity>
         <activity android:name=".AS_Inquiry" />
         <activity android:name=".AS_Sign_Up" />
         <activity android:name=".AS_Login" />
