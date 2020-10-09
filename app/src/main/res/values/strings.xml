@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Com Bank Application</string>
+
+    <string-array name="accountTypes">
+        <item>Fixed Deposit Account</item>
+        <item>Arunalu Savings Account</item>
+    </string-array>
 </resources>
