@@ -18,7 +18,7 @@ public class SuccessTransaction extends AppCompatActivity {
         BtnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SuccessTransaction.this,MainActivity.class);
+                Intent intent = new Intent(SuccessTransaction.this,KP_Dashboard.class);
                 startActivity(intent);
             }
         });
