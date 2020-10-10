@@ -23,17 +23,25 @@ public class KP_Dashboard extends AppCompatActivity {
     private TextView header, desc;
     private int position;
     private String textList[] = {
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
-            "2",
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
-            "4",
+            "This interface has the main categories like Telephone, Water,Electricity and etc.",
+            "Dashboard leads the users through the flow of the application.",
+            "This interface is useful for the fund transfer activities.",
+            "User can select the account options through this interface",
+            "User can view all the details properly through this interface",
+            "User can add deposit amount, account type and duration to find to calculate the interest",
+            "Payments and settlements are displayed in this interface",
+            "Here this application is consisted with fund transfer management and payment settlements. Here the transfer history is shown in an ordered manner.",
     };
 
     private String text[] = {
-            "Sign Up",
-            "Sign In",
-            "Contact Us",
-            "Inquiry",
+            "Categories",
+            "Dashboard",
+            "Fund Transfer",
+            "Account Types",
+            "Savings Account",
+            "Compare Accounts",
+            "Payment Settlement",
+            "Fund Transfer Management",
     };
 
     @Override
@@ -78,8 +86,8 @@ public class KP_Dashboard extends AppCompatActivity {
         });
 
         /*
-        * User Guide Section
-        */
+         * User Guide Section
+         */
         userGui = findViewById(R.id.cardView9);
         userGuide = new Dialog(this);
         userGui.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +111,8 @@ public class KP_Dashboard extends AppCompatActivity {
                 header = (TextView) userGuide.findViewById(R.id.head);
                 desc = (TextView) userGuide.findViewById(R.id.desc);
 
-                int image[] = {R.drawable.back_layout_1, R.drawable.back_layout_2, R.drawable.back_layout_3,R.drawable.back_layout_4};;
+                int image[] = {R.drawable.categoriesimg, R.drawable.dashboardimg, R.drawable.ownimg,R.drawable.back_layout_4,R.drawable.usvimg,R.drawable.compareimg,R.drawable.payhistoryimg,R.drawable.usvimg};;
+
 
                 position = 0;
                 ImageView im = new ImageView(getApplicationContext());
@@ -111,16 +120,16 @@ public class KP_Dashboard extends AppCompatActivity {
                 slider.addView(im);
                 slider.setAutoStart(false);
                 slider.setInAnimation(getApplicationContext(), android.R.anim.slide_in_left);
-                slider.setOutAnimation(getApplicationContext(),android.R.anim.slide_out_right);
+                slider.setOutAnimation(getApplicationContext(), android.R.anim.slide_out_right);
                 header.setText(text[position]);
                 desc.setText(textList[position]);
 
                 next.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        int image[] = {R.drawable.back_layout_1, R.drawable.back_layout_2, R.drawable.back_layout_3,R.drawable.back_layout_4};;
+                        int image[] = {R.drawable.categoriesimg, R.drawable.dashboardimg, R.drawable.ownimg,R.drawable.seleacntimg,R.drawable.usvimg,R.drawable.compareimg,R.drawable.payhistoryimg,R.drawable.usvimg};;
 
-                        if(position < image.length - 1){
+                        if (position < image.length - 1) {
                             ImageView im = new ImageView(getApplicationContext());
                             im.setBackgroundResource(image[++position]);
                             slider.addView(im);
@@ -134,9 +143,9 @@ public class KP_Dashboard extends AppCompatActivity {
                 back.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        int image[] = {R.drawable.back_layout_1, R.drawable.back_layout_2, R.drawable.back_layout_3,R.drawable.back_layout_4};;
+                        int image[] = {R.drawable.categoriesimg, R.drawable.dashboardimg, R.drawable.ownimg,R.drawable.seleacntimg,R.drawable.usvimg,R.drawable.compareimg,R.drawable.payhistoryimg,R.drawable.usvimg};;
 
-                        if(position > 0){
+                        if (position > 0) {
                             ImageView im = new ImageView(getApplicationContext());
                             im.setBackgroundResource(image[--position]);
                             slider.addView(im);
