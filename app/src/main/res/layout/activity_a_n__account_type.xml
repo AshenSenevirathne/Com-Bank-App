@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_layout_5"
+    tools:context=".AN_AccountType">
+
+
+    <Button
+        android:id="@+id/dotComBtn"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/button_style"
+        android:text="Dotcom"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_marginLeft="10px"
+        app:layout_constraintEnd_toStartOf="@+id/powerSavingsBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/arunaluBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/arnagiBtn6"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/button_style"
+        android:text="Anagi"
+        android:layout_marginLeft="10px"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/udaraBtn" />
+
+    <Button
+        android:id="@+id/superSaving"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/button_style"
+        android:text="Super Saving"
+        android:layout_marginLeft="10px"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/udaraBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/udaraBtn"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/button_style"
+        android:text="Udara Saving"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_marginLeft="10px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arnagiBtn6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/superSaving" />
+
+    <Button
+        android:id="@+id/powerSavingsBtn"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/button_style"
+        android:text="Power Savings"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="20px"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dotComBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/arunaluBtn"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/button_style"
+        android:text="Arunalu Minors"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_marginLeft="40px"
+        app:layout_constraintEnd_toStartOf="@+id/dotComBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_style"
+        android:text="Savings"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/fixedBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/fixedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_style"
+        android:text="Fixed"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/otherBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/savingsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/otherBtn"
+        android:layout_width="99dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:text="Other"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fixedBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/com_bank_logo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="387dp"
+        android:layout_height="183dp"
+        app:layout_constraintBottom_toTopOf="@+id/dotComBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixedBtn"
+        app:layout_constraintVertical_bias="0.564"
+        app:srcCompat="@drawable/savingimg" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:text="Commercial Bank"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
