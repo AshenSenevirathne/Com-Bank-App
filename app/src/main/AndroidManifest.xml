@@ -29,6 +29,9 @@
         <activity android:name=".AS_Sign_Up" />
         <activity android:name=".AS_Login" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".SuccessTransaction"></activity>
+        <activity android:name=".PaymentSettlement" />
+        <activity android:name=".FundTranManagement" />
     </application>
 
 </manifest>
