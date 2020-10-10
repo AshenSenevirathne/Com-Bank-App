@@ -9,21 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AN_UserGuide">
-
-        </activity>
-        <activity android:name=".AN_Compare"></activity>
-        <activity android:name=".AN_FixedAccount" />
-        <activity android:name=".AN_Arunalu" />
-        <activity android:name=".AN_AccountType">
+        <activity android:name=".KP_Account_details">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".AS_Inquiry_Other"></activity>
+        <activity android:name=".KP_Accounts"/>
+        <activity android:name=".AN_UserGuide" />
+        <activity android:name=".AN_Compare" />
+        <activity android:name=".AN_FixedAccount" />
+        <activity android:name=".AN_Arunalu" />
+        <activity android:name=".AN_AccountType" />
+        <activity android:name=".AS_Inquiry_Other" />
         <activity android:name=".AS_Inquiry" />
         <activity android:name=".AS_Sign_Up" />
         <activity android:name=".AS_Login" />
