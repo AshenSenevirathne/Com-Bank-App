@@ -323,8 +323,8 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="24dp"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/guideicon"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ugi"
                         app:civ_border_color="#2196F3"
                         app:civ_border_width="5dp" />
 
@@ -359,7 +359,7 @@
                         android:layout_height="100dp"
                         android:layout_marginLeft="24dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/branchesicon"
+                        android:src="@drawable/buil"
                         app:civ_border_color="#2196F3"
                         app:civ_border_width="5dp" />
 
