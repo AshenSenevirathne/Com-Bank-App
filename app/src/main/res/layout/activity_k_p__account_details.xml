@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.265" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/backBtn"
         android:layout_width="49dp"
         android:layout_height="40dp"
         android:contentDescription="TODO"

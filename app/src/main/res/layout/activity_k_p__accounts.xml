@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.265" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/backbtn"
         android:layout_width="49dp"
         android:layout_height="40dp"
         android:contentDescription="TODO"
@@ -175,6 +175,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/creCardBtn"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
