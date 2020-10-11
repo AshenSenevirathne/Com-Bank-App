@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_layout_4"
+    tools:context=".KP_Exchange_Rates">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/combank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="120dp"
+            android:text="Commercial Bank"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/imgCombank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            app:srcCompat="@drawable/com_bank_logo" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/header"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/BackBtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_below="@+id/header"
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="30dp"
+        android:text="Rates"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_below="@+id/hello"
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="0dp"
+        android:text="Exchange Rates"
+        android:textColor="@android:color/background_light"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_below="@+id/username"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="275dp"
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/transactionicon" />
+
+    <LinearLayout
+        android:id="@+id/btnBar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:background="#2196F3"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:text="Currency" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:background="#2196F3"
+            android:text="Cheques" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:layout_marginTop="8dp"
+            android:text="Internet Banking" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView1"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBar"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#0D81E3"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <androidx.cardview.widget.CardView
+           android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:id="@+id/exchangerateslabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="6dp"
+                android:text="Exchange Rates"
+                android:textColor="#1C0E35"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="18dp"
+                android:drawableRight="@drawable/usdicon"
+                android:background="@drawable/edittext_style_xr"
+                android:hint="Enter Amount  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="195dp"
+                android:drawableRight="@drawable/lkricon"
+                android:background="@drawable/edittext_style_xr"
+                android:hint="Enter Amount  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/usd"
+                android:layout_height="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="95dp"
+                android:text="1 USD"
+                android:textColor="#343335"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/lkr"
+                android:layout_height="30dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="95dp"
+                android:text="186.52 LKR"
+                android:textColor="#343335"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="175dp"
+                android:src="@drawable/exicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/lastupdate"
+                android:layout_height="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="135dp"
+                android:text="Last Update On : 11:43 AM 8/29/2020"
+                android:textColor="#343335"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cardView1">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow android:background="#03A9F4" android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:text="Currency Name" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:text="Currency Code" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:text="Buy Rate" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:text="Selling Rate" />
+            </TableRow>
+            <TableRow android:background="#F0F7F7" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="US DOLLARS" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="USD" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="180.35" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="188.65" />
+            </TableRow>
+            <TableRow android:background="#F0F7F7" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EURO" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EUR" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="207.52" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="220.50" />
+            </TableRow>
+            <TableRow android:background="#F0F7F7" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YEN" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="JPY" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1.68" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1.78" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

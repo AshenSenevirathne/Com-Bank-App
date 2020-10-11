@@ -79,7 +79,7 @@
                 android:rowCount="2">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
+                    android:id="@+id/accountbtn"
                     android:layout_width="150dp"
                     android:layout_height="155dp"
                     android:layout_marginLeft="35dp"
@@ -238,7 +238,7 @@
                 android:rowCount="2">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView6"
+                    android:id="@+id/exchangeRates"
                     android:layout_width="150dp"
                     android:layout_height="155dp"
                     android:layout_marginLeft="35dp"
