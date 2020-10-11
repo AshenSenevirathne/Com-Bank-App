@@ -42,7 +42,7 @@ public class AS_Login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please Enter Password", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    startActivity(new Intent(AS_Login.this, AS_Inquiry  .class));
+                    startActivity(new Intent(AS_Login.this, KP_Dashboard.class));
                 }
 
             }

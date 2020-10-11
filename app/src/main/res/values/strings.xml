@@ -5,4 +5,5 @@
         <item>Fixed Deposit Account</item>
         <item>Arunalu Savings Account</item>
     </string-array>
+    <string name="title_activity_branch__locations">Map</string>
 </resources>

@@ -307,6 +307,76 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#DADFEA"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image9"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/transactionicon"
+                        app:civ_border_color="#2196F3"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="User Guide"
+                        android:textColor="#040007"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#DADFEA"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/contactus"
+                        app:civ_border_color="#2196F3"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="Branches"
+                        android:textColor="#040007"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
             </GridLayout>
 
         </LinearLayout>
