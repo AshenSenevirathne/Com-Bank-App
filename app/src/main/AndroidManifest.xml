@@ -33,11 +33,6 @@
             android:name=".Branch_Locations"
             android:label="@string/title_activity_branch__locations" />
         <activity android:name=".KP_Dashboard">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".KP_Account_details" />
         <activity android:name=".KP_Accounts" />
@@ -50,6 +45,11 @@
         <activity android:name=".AS_Inquiry" />
         <activity android:name=".AS_Sign_Up" />
         <activity android:name=".AS_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".SuccessTransaction" />

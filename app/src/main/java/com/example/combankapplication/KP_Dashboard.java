@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class KP_Dashboard extends AppCompatActivity {
-    CardView cardFundTrn, cardPaySettl, contact, branches, userGui, accounts, exchangeRates;
+    CardView cardFundTrn, cardPaySettl, contact, branches, userGui, accounts, exchangeRates, accountTypes;
     private Button btn;
     private Dialog userGuide;
     private ViewFlipper slider;
@@ -98,6 +98,14 @@ public class KP_Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(KP_Dashboard.this, KP_Exchange_Rates.class));
+            }
+        });
+
+        accountTypes = findViewById(R.id.cardView4);
+        accountTypes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KP_Dashboard.this, AN_AccountType.class));
             }
         });
 
